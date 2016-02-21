@@ -1,0 +1,8 @@
+verilog work "../Downloads/reg_file.v"
+verilog work "../Downloads/InstROM.v"
+verilog work "../Downloads/IF.v"
+verilog work "../Downloads/DataRAM.v"
+verilog work "../Downloads/Control.v"
+verilog work "../Downloads/ALU.v"
+verilog work "immidiate_module.v"
+verilog work "../Downloads/TopLevel.v"

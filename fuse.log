@@ -1,0 +1,36 @@
+Running: /usr/local/Xilinx/14.5/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o /students/home/ncleves/CatPU/TopLevel_tb_isim_beh.exe -prj /students/home/ncleves/CatPU/TopLevel_tb_beh.prj work.TopLevel_tb work.glbl 
+ISim P.58f (signature 0xfbc00daa)
+Number of CPUs detected in this system: 12
+Turning on mult-threading, number of parallel sub-compilation jobs: 24 
+Determining compilation order of HDL files
+Analyzing Verilog file "/students/home/ncleves/CatPU/../Downloads/reg_file.v" into library work
+Analyzing Verilog file "/students/home/ncleves/CatPU/../Downloads/IF.v" into library work
+Analyzing Verilog file "/students/home/ncleves/CatPU/../Downloads/DataRAM.v" into library work
+Analyzing Verilog file "/students/home/ncleves/CatPU/../Downloads/Control.v" into library work
+Analyzing Verilog file "/students/home/ncleves/CatPU/../Downloads/ALU.v" into library work
+Analyzing Verilog file "/students/home/ncleves/CatPU/inst_module_problem18.v" into library work
+Analyzing Verilog file "/students/home/ncleves/CatPU/immidiate_module.v" into library work
+Analyzing Verilog file "/students/home/ncleves/CatPU/../Downloads/TopLevel.v" into library work
+Analyzing Verilog file "/students/home/ncleves/CatPU/../Downloads/TopLevel_tb.v" into library work
+Analyzing Verilog file "/usr/local/Xilinx/14.5/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 94020 KB
+Fuse CPU Usage: 840 ms
+Compiling module IF
+Compiling module inst_module_problem18
+Compiling module Control
+Compiling module reg_file
+Compiling module immidiate_module
+Compiling module ALU
+Compiling module DataRAM
+Compiling module TopLevel
+Compiling module TopLevel_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 10 Verilog Units
+Built simulation executable /students/home/ncleves/CatPU/TopLevel_tb_isim_beh.exe
+Fuse Memory Usage: 1700896 KB
+Fuse CPU Usage: 910 ms
+GCC CPU Usage: 750 ms

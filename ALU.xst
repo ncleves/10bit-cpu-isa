@@ -1,0 +1,5 @@
+set -tmpdir "/students/home/ncleves/CatPU/xst/projnav.tmp"
+set -xsthdpdir "/students/home/ncleves/CatPU/xst"
+elaborate
+-ifn ALU.prj
+-ifmt mixed
