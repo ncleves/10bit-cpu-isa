@@ -1,6 +1,10 @@
 # 10bit-cpu-isa
 A 10 bit Single Cycle CPU written primarily in Verilog that solves two "simple" problems. The instruction set architecture was created for this CPU as well.
 
+Problem 1: Write a program that counts how many half-words in an array have an even number of ones, and how many have an odd number of ones. 
+
+(For example, the binary number 11010001 has an even number of ones. The array is 64 half-words long, and starts at address 32. The number of entries that have an even number of ones should be written to address 2, and the number of odd to address 3.)
+
 #####Problem 1 - Instructions:
 ```
 set r5, 001				# set r5 to equal 1
@@ -44,6 +48,10 @@ sub r4, r2				# get total # of odds by doing 64-#ofevens
 store r4, r5			# put total # of evens into address 3
 halt					# end
 ```
+
+Problem 2: String matching. Address 9 contains two bytes. Search for those two bytes in order, in a 48-halfword (96 byte) array starting at address 96. If found, store the index at which the first byte is found in address 10. If not found, store –1 at address 10. Note that the string could span a halfword boundary. 
+
+(For example, if M[9] contains 0xA713, and the values, starting at 96, are 0x2345, 0xA756, 0x329F, 0x30A7, 0x1394, ... you would store 3 in M[10]. Assume that the high byte of a halfword comes sequentially before the low byte.)
 
 #####Problem 2 - Instructions:
 ```
