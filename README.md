@@ -5,7 +5,7 @@ Problem 1: Write a program that counts how many half-words in an array have an e
 
 (For example, the binary number 11010001 has an even number of ones. The array is 64 half-words long, and starts at address 32. The number of entries that have an even number of ones should be written to address 2, and the number of odd to address 3.)
 
-#####Problem 1 - Instructions:
+##### Problem 1 - Instructions:
 ```
 set r5, 001				# set r5 to equal 1
 set r2, 000				# set r2 to equal 0
@@ -53,7 +53,7 @@ Problem 2: String matching. Address 9 contains two bytes. Search for those two b
 
 (For example, if M[9] contains 0xA713, and the values, starting at 96, are 0x2345, 0xA756, 0x329F, 0x30A7, 0x1394, ... you would store 3 in M[10]. Assume that the high byte of a halfword comes sequentially before the low byte.)
 
-#####Problem 2 - Instructions:
+##### Problem 2 - Instructions:
 ```
 set r7, 111		 				# sets r7 equal to 9
 load r0, r7				    	# loads what is in address 9 into r0
@@ -83,7 +83,7 @@ store r2, r7					# -1 is put at address 10
 halt							# ends the program
 ```
 
-#####The supported memory addresses:
+##### The supported memory addresses:
 
 | Register|Memory Address|
 |---|---|
@@ -96,7 +96,7 @@ halt							# ends the program
 |  r6 |    110|
 |  r7 |    111|
 
-#####Immediates ("Important" integers harded coded in memory):
+##### Immediates ("Important" integers harded coded in memory):
 |Immediate Address|Number|
 |---|---|
 |001| 0|
@@ -108,7 +108,7 @@ halt							# ends the program
 |110| 192|
 |111| 9|
 
-#####The supported operations:
+##### The supported operations:
 
 Operation|Address|Instruction Type|
 |---|---|---|
@@ -126,7 +126,7 @@ Operation|Address|Instruction Type|
 |INCR| 1011| Immediate|
 |BNE| 1100| Register|
  
-#####Operations handled by the ALU
+##### Operations handled by the ALU
 |OPS|Description|
 |---|---|
 |ADD|The output is equal to inputA + inputB|
